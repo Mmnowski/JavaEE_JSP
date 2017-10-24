@@ -45,6 +45,12 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.16</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>org.eclipse.jetty</groupId>
+    		<artifactId>jetty-server</artifactId>
+    		<version>9.4.6.v20170531</version>
+		</dependency>
 
 	</dependencies>
 	<build>

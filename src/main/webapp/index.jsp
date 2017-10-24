@@ -5,12 +5,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Demo application</title>
+        <title>Blockbusted</title>
     </head>
     <body>
-        <h2>Simple demo application with Java EE 6 Servlet (3.0) and JSP</h2>
-        <p><a href="hello">See greetings from servlet</a></p>
-        <p><a href="form">Fill a form</a></p>
-        <p><a href="getOrderData.jsp">Fill a Person form</a></p>
+        <h2>Implementation of a simple movie rentage</h2>
+        <p><a href="showAllMovies.jsp">See available movies</a></p>
     </body>
 </html>
