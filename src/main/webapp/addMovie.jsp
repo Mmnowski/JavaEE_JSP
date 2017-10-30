@@ -17,13 +17,16 @@
   storage.add(movie);
 %>
 
-<p>Created a new movie order: </p>
-<p>Title: ${movie.Title} </p>
-<p>Director: ${movie.Director} </p>  
-<p>First name: ${movie.Genre} </p>
-<p>Price: ${movie.Ammount} </p>    
-<p>
-  <a href="showAllMovies.jsp">Show all orders</a>
-</p>
+<form action="addedDrink.jsp">
+
+  Title :<input type="text" name="name" value="${movie.title}" /><br />
+  Director :<input type="text" name="name" value="${movie.director}" /><br />
+  Genre :<input type="text" name="name" value="${movie.genre}" /><br />
+  Price :<input type="text"  name="price" value="${movie.price}" /><br />
+  Amount :<input type="text"  name="amount" value="${movie.amount}" /><br />
+  <input type="submit" value=" OK ">
+
+</form>
+
 </body>
 </html>

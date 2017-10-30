@@ -5,18 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Rent a movie</title>
+<title>Movie list</title>
 </head>
 <body>
 
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
 <%
   for (Movie movie : storage.getAllMovies()) {
-	  out.println("<p>Title: " + movie.getTitle() + "; Director: " + movie.getDirector() + "; Genre: " + movie.getGenre() + "; Price: " + movie.getAmount() + "</p>");
+	  out.println("<p>Title: " + movie.getTitle() + "; Director: " + movie.getDirector() + "; Genre: " + movie.getGenre() + "; Price: " + movie.getPrice() + "; Amount" + movie.getAmount() + "</p>");
   }
 %>
 <p>
-  <a href="getMovieData.jsp">Add another movie</a>
+  <a href="addMovie.jsp">Add another movie</a>
 </p>
 
 </body>

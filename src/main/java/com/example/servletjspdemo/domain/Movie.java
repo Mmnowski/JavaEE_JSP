@@ -9,16 +9,18 @@ public class Movie {
 	private Genre genre;
 	private String director;	
 	private int amount;
+	private double price = 1;
 	
 	public Movie() {
 		super();
 	}
 	
-	public Movie(String title, String director, Genre genre, int amount) {
+	public Movie(String title, String director, Genre genre, int amount, double price) {
 		this.title = title;
 		this.director = director;		
 		this.genre = genre;
 		this.amount = amount;
+		this.price = price;
 	}
 	public String getTitle() {
 		return title;
@@ -44,5 +46,15 @@ public class Movie {
 	public void setAmmount(int amount) {
 		this.amount = amount;
 	}
-	
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public synchronized void rentMovie(int amount) {
+		if (this.amount > 0 && this.amount >= amount) {
+			this.amount -= amount;
+		}
+	}
 }
